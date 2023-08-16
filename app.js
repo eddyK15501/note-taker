@@ -3,12 +3,12 @@ const express = require('express');
 const app = express()
 const path = require('path')
 
-const notesRoutes = require('./routes/notesRoutes')
 const PORT = 5001
+const notesRoutes = require('./routes/notesRoutes')
 
 // Middleware for serving static files in the ./public folder
 app.use(express.static('./public'))
-// Router mounted as middleware
+// Router for /api/notes mounted as middleware
 app.use('/api/notes', notesRoutes)
 
 app.get('/', (req, res) => {
