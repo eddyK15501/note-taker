@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const fsPromises = require('fs').promises;
+import { v4 as uuidv4 } from 'uuid';
 
 // Mock database for notes data storage
 const notesData = require('../db/db.json');
@@ -23,15 +24,18 @@ router.post('/', async (req, res) => {
     const dbFilePath = path.resolve('db', 'db.json')
     try {
         fsPromises.writeFile(dbFilePath, JSON.stringify(notesData, null, 2))
-        console.log(notesData)
+        res.json(notesData)
+        // console.log(notesData)
     } catch (error) {
         console.error("Error writing to mock db.json", error)
-        res.status(500).send("Error saving note")
+        res.status(500)
     }
 })
 
 router.delete('/:id', (req, res) => {
-
+    const param = req.params
+    console.log(param)
+    res.send(param)
 })
 
 module.exports = router
