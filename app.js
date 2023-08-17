@@ -5,6 +5,8 @@ const app = express()
 const path = require('path')
 
 const PORT = process.env.PORT || 5001;
+
+// Routes imported from ./routes/notesRoutes
 const notesRoutes = require('./routes/notesRoutes')
 
 // Cross-Origin Resource Sharing Middleware
@@ -18,12 +20,14 @@ app.use(express.static('./public'))
 // Router for /api/notes mounted as middleware
 app.use('/api/notes', notesRoutes)
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'))
-})
-
+// Send notes.html for path /notes
 app.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, './public/notes.html'))
+})
+
+// Send index.html for all paths
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'))
 })
 
 // Server listening on localhost
