@@ -1,21 +1,17 @@
 [
   {
-    "title": "Test Title",
-    "text": "Test text"
+    "title": "Express.js",
+    "text": "Backend server codes written using express.js",
+    "id": "4f83b040-5a7c-48d5-a9ce-4f1e00cfc0ff"
   },
   {
-    "title": "sup",
-    "text": "fool",
-    "id": "e3aa5799-f375-42b0-827c-f50ab7d55fa0"
+    "title": "MySQL",
+    "text": "Currently learning MySQL in class",
+    "id": "6cc0cc78-1468-43d8-9861-3c16f99db0da"
   },
   {
-    "title": "nice job",
-    "text": "what you mean",
-    "id": "bf5f8c89-9838-4922-8285-9b275f9ac4ad"
-  },
-  {
-    "title": "just chillin",
-    "text": "Whats good",
-    "id": "fb59e9a8-4b18-4b80-9496-8d9f93e9cc0f"
+    "title": "Object Relational Mapping",
+    "text": "Learning Sequalize.js after MySQL, to connect Express.js to database.",
+    "id": "230101dd-02f6-4e69-8545-e5d7babdabe5"
   }
 ]
