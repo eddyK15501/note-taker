@@ -17,15 +17,14 @@ router.get('/', (req, res) => {
 })
 
 router.post('/', async (req, res) => {
-    const { title, text } = req.body
-    const newNote = { id: uuidv4(), title, text }
-    notesData.push(newNote)
+    req.body.id = uuidv4(); 
+    notesData.push(req.body)
 
     const dbFilePath = path.resolve('db', 'db.json')
     try {
         fsPromises.writeFile(dbFilePath, JSON.stringify(notesData, null, 2))
-        res.status(201).json(notesData)
-        console.log(notesData)
+        res.status(201).json(req.body)
+        // console.log(notesData)
     } catch (error) {
         console.error("Error writing to mock db.json", error)
         res.status(500).json({ error: "Error; Note was not written to db.json" })

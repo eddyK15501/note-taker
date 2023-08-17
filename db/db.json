@@ -4,32 +4,13 @@
     "text": "Test text"
   },
   {
-    "title": "asdf",
-    "text": "qwer"
+    "title": "add this",
+    "text": "save this",
+    "id": "c4b9ba91-b76b-4008-a1b9-d919daed932f"
   },
   {
-    "title": "1234",
-    "text": "qwerqwer"
-  },
-  {
-    "title": "1234",
-    "text": "qwerqwer"
-  },
-  {
-    "title": "new Title",
-    "text": "random"
-  },
-  {
-    "title": "gresgr",
-    "text": "hjlkjlkjlk"
-  },
-  {
-    "title": "this title",
-    "text": "write this for me"
-  },
-  {
-    "id": "888dc4ad-66a1-4e22-a12a-71451c588b79",
-    "title": "new note",
-    "text": "show me an id\n"
+    "title": "new new",
+    "text": "new text",
+    "id": "c681d559-0146-47a4-979d-885f547b878f"
   }
 ]
