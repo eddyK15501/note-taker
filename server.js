@@ -1,8 +1,8 @@
 // Express.js import statement; 'cors' & 'path' modules brought in
 const express = require('express');
 const cors = require('cors')
-const app = express()
 const path = require('path')
+const app = express()
 
 const PORT = process.env.PORT || 5001;
 
