@@ -1,15 +1,15 @@
-// Express.js, path, and fs modules; uuidv4 for generating unique id
+// express, path, and fs modules; uuidv4 for generating unique id
 const express = require('express');
 const path = require('path');
 const fsPromises = require('fs').promises;
 const { v4: uuidv4 } = require('uuid');
 
-// Mock database for notes data storage
+// Mock database for storing notes data
 const notesData = require('../db/db.json');
 
 // Create a router
 const router = express.Router();
-// Middleware for parsing incoming JSON data on the router
+// Middleware for parsing incoming JSON data
 router.use(express.json());
 
 // GET /api/notes
@@ -43,7 +43,7 @@ router.delete('/:id', async (req, res) => {
     
     // Get index of the note with the specific id that matches in the db.json array
     const noteToDelete = notesData.findIndex(note => note.id === id)
-
+    
     if (noteToDelete === -1) {
         return res.status(404).json({ error: 'Note with id not found' })
     }
