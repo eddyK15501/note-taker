@@ -27,7 +27,7 @@ router.post('/', async (req, res) => {
 
     // writeFile() to update db.json array; if successful: send .json with status code 201 for "created"
     try {
-        fsPromises.writeFile(dbFilePath, JSON.stringify(notesData, null, 2))
+        await fsPromises.writeFile(dbFilePath, JSON.stringify(notesData, null, 2))
         res.status(201).json(req.body)
         console.log(notesData)
     } catch (error) {
@@ -43,7 +43,7 @@ router.delete('/:id', async (req, res) => {
     
     // Get index of the note with the specific id that matches in the db.json array
     const noteToDelete = notesData.findIndex(note => note.id === id)
-    
+
     if (noteToDelete === -1) {
         return res.status(404).json({ error: 'Note with id not found' })
     }
@@ -55,7 +55,7 @@ router.delete('/:id', async (req, res) => {
 
     // writeFile() to update db.json array; if successful: send status code of 204 for "no-content";
     try {
-        fsPromises.writeFile(dbFilePath, JSON.stringify(notesData, null, 2))
+        await fsPromises.writeFile(dbFilePath, JSON.stringify(notesData, null, 2))
         res.status(204).json(notesData)
         console.log(notesData)
     } catch {
