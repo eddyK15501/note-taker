@@ -21,7 +21,12 @@
   },
   {
     "title": "Project 2",
-    "text": "Heard this one will be quite the challenge. By the way, templating engines are quite outdated.",
-    "id": "f7b9549e-1d55-4eaf-b4be-32d585a82a19"
+    "text": "I hear this one is quite the challenge.",
+    "id": "e7686f3b-9156-4b56-bbb5-56cbd0ef154d"
+  },
+  {
+    "title": "If you're reading this...",
+    "text": "Write me a joke.",
+    "id": "4fb87070-e237-48f1-b639-177888d4b326"
   }
 ]
