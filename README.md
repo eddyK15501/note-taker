@@ -1,7 +1,7 @@
 # Note Taker • [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description 
-Full stack application that allows users to create and save notes. Backend server codes written with Express.js, using a mock db.json file. Deployed and hosted with Heroku.
+Full stack application that allow users to create and save notes. Backend server codes written with Express.js, using a mock db.json file. Deployed and hosted with Heroku.
 
 ## Link to deployed application
 * [Click here](https://eddyk15501-note-taker-a325a523bb6a.herokuapp.com/)
