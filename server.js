@@ -20,12 +20,12 @@ app.use(express.static('./public'))
 // Router for /api/notes mounted as middleware
 app.use('/api/notes', notesRoutes)
 
-// Send notes.html for path /notes
+// Send ./public/notes.html for path /notes
 app.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, './public/notes.html'))
 })
 
-// Send index.html for all paths
+// Send ./public/index.html for all paths
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'))
 })

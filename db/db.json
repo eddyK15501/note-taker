@@ -13,5 +13,15 @@
     "title": "Object Relational Mapping",
     "text": "Learning Sequalize.js after MySQL, to connect Express.js to database.",
     "id": "230101dd-02f6-4e69-8545-e5d7babdabe5"
+  },
+  {
+    "title": "Handlebars.js",
+    "text": "JavaScript templating engine for serving dynamic HTML from the server.",
+    "id": "e13de8e4-f323-4f37-8555-d780ee5bc3d4"
+  },
+  {
+    "title": "Project 2",
+    "text": "Heard this one will be quite the challenge. By the way, templating engines are quite outdated.",
+    "id": "f7b9549e-1d55-4eaf-b4be-32d585a82a19"
   }
 ]
