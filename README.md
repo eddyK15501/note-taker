@@ -4,7 +4,10 @@
 Full stack application that allow users to create and save notes. Backend server codes written with Express.js, using a mock db.json file. Deployed and hosted with Heroku.
 
 ## Link to deployed application
+#### Update: The Heroku application has been deactivated due to accumulating dyno fees, that are exceeding the limits provided by the Github Student Developer Pack.
+
 * [Click here](https://eddyk15501-note-taker-a325a523bb6a.herokuapp.com/)
+
 
 ## Usage
 * #### Click on the link above to access the deployed application.
